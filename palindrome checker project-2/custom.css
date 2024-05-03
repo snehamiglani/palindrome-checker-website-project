@@ -1,0 +1,73 @@
+.background {
+  background: hsla(236, 100%, 72%, 1);
+  background: linear-gradient(360deg, hsla(236, 100%, 72%, 1) 0%, hsla(171, 87%, 67%, 1) 100%);
+  background: -moz-linear-gradient(360deg, hsla(236, 100%, 72%, 1) 0%, hsla(171, 87%, 67%, 1) 100%);
+  background: -webkit-linear-gradient(360deg, hsla(236, 100%, 72%, 1) 0%, hsla(171, 87%, 67%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6e78ff", endColorstr="#61f4de", GradientType=1 );/* Your gradient background */
+  
+}
+body{
+  overflow-x: hidden;
+}
+.content {
+  background-color: white;
+}
+.dark-mode .background {
+  background: linear-gradient(45deg, #454141, #111010); /* Dark gradient background */
+}
+.dark-mode .content {
+  background-color: #0e0e0e; /* Dark container box */
+  color: white; /* Text color */
+}
+.dark-mode .contents{
+  background-color:#454141 ;
+}
+.dark-mode #textInput{
+  background-color: #111010;
+}
+.bg-image{
+  background-image: url(images/layer2.png);
+  background-size: 800px;
+  width: 49.2%;
+}
+.text-primary{
+  transform: translateX(-40px);
+}
+.textimage{
+  transform: translate(-80px,80px);
+}
+textarea{
+  transition: border-color 0.3s;
+}
+/* Page Loader Styles */
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); 
+  z-index: 9999; 
+  display: none; 
+  justify-content: center;
+  align-items: center;
+}
+/* Spinner Animation */
+.spinner-border {
+  animation: spin 1s infinite linear; 
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
